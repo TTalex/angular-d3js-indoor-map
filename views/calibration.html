@@ -1,0 +1,10 @@
+<div>
+    <div>
+    <img src="images/floorplan.jpg" ng-click="input($event)" height=487 width=720></image>
+    </div>
+    <div>
+        <input style="float: left" type="button" ng-value="calibrate" ng-click="toggleCalibrate()"></input>
+        <div ng-show="cali_value !== -1" style="float: left">Calibrating room {{ cali_value }}</div>
+        <div style="clear:left">{{result | json}}</div>
+    </div>
+</div>
